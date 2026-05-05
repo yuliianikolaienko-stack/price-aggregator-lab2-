@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПрайсАгрегатор Харків</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="hero">
+            <div class="hero-badge">Харків • Супермаркети • Ціни в гривнях</div>
+            <h1>ПрайсАгрегатор</h1>
+            <p class="hero-subtitle">
+                Порівнюйте ціни на продукти в супермаркетах Харкова та знаходьте найвигіднішу покупку.
+            </p>
+        </header>
+
+        <main class="content-grid">
+            <section class="panel search-panel">
+                <h2>Пошук товару</h2>
+                <p class="panel-description">
+                    Введіть назву продукту українською мовою, наприклад: молоко, хліб, яйця, яблука.
+                </p>
+
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Введіть назву продукту">
+                    <button id="searchButton">Знайти</button>
+                    <button id="allButton" class="secondary-btn">Показати всі</button>
+                </div>
+
+                <div class="quick-tags">
+                    <button class="tag-btn" data-product="молоко">Молоко</button>
+                    <button class="tag-btn" data-product="хліб">Хліб</button>
+                    <button class="tag-btn" data-product="яйця">Яйця</button>
+                    <button class="tag-btn" data-product="яблука">Яблука</button>
+                    <button class="tag-btn" data-product="сир">Сир</button>
+                    <button class="tag-btn" data-product="гречка">Гречка</button>
+                </div>
+
+                <div id="message" class="message"></div>
+            </section>
+
+            <section class="panel summary-panel">
+                <h2>Де вигідніше купити</h2>
+                <div id="summaryCard" class="summary-card empty-summary">
+                    Після пошуку тут з’явиться короткий підсумок із найвигіднішою ціною.
+                </div>
+            </section>
+
+            <section class="panel add-panel">
+                <h2>Додати новий товар</h2>
+                <p class="panel-description">
+                    Ця функція демонструє розширення системи та запис нових даних у локальну базу.
+                </p>
+
+                <form id="addProductForm" class="add-form">
+                    <input type="text" id="newName" placeholder="Назва товару">
+                    <input type="text" id="newMarket" placeholder="Супермаркет">
+                    <input type="number" step="0.1" id="newPrice" placeholder="Ціна, грн">
+                    <input type="text" id="newCategory" placeholder="Категорія">
+                    <input type="text" id="newAddress" placeholder="Адреса в Харкові">
+                    <button type="submit">Додати товар</button>
+                </form>
+            </section>
+        </main>
+
+        <section class="panel results-panel">
+            <div class="results-header">
+                <h2>Результати</h2>
+                <span id="resultsCount" class="results-count">0 позицій</span>
+            </div>
+            <div id="results" class="results"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

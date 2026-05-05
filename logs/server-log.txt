@@ -1,0 +1,27 @@
+[23.04.2026, 14:08:46] SERVER STARTED on 127.0.0.1:4000
+[23.04.2026, 14:13:26] REQUEST from 127.0.0.1:60768 -> {"action":"register","data":{"login":"test","password":"123"}}
+[23.04.2026, 14:13:26] RESPONSE -> {"success":true,"message":"Реєстрація успішна"}
+[23.04.2026, 14:13:59] REQUEST from 127.0.0.1:60768 -> {"action":"login","data":{"login":"test","password":"123"}}
+[23.04.2026, 14:13:59] RESPONSE -> {"success":true,"message":"Авторизація успішна"}
+[23.04.2026, 14:14:17] REQUEST from 127.0.0.1:60768 -> {"action":"getAllProducts","data":{}}
+[23.04.2026, 14:14:17] RESPONSE -> returned 25 products
+[23.04.2026, 14:14:53] REQUEST from 127.0.0.1:60768 -> {"action":"searchProduct","data":{"name":"молоко"}}
+[23.04.2026, 14:14:53] RESPONSE -> found 3 products for search "молоко"
+[23.04.2026, 14:17:03] REQUEST from 127.0.0.1:60768 -> {"action":"addProduct","data":{"name":"Сметана","supermarket":"АТБ","price":"39.9","category":"Молочні продукти","address":"м. Харків, вул. Полтавський шлях, 58"}}
+[23.04.2026, 14:17:03] RESPONSE -> added product Сметана
+[23.04.2026, 14:17:30] REQUEST from 127.0.0.1:60768 -> {"action":"searchProduct","data":{"name":"Сметана"}}
+[23.04.2026, 14:17:30] RESPONSE -> found 1 products for search "Сметана"
+[23.04.2026, 14:35:32] SERVER STARTED on 127.0.0.1:4000
+[23.04.2026, 14:38:24] REQUEST from 127.0.0.1:60882 -> {"action":"register","data":{"login":"test","password":"123"}}
+[23.04.2026, 14:38:24] RESPONSE -> {"success":false,"message":"Користувач з таким логіном уже існує"}
+[23.04.2026, 14:38:45] REQUEST from 127.0.0.1:60882 -> {"action":"register","data":{"login":"lab 2","password":"123"}}
+[23.04.2026, 14:38:45] RESPONSE -> {"success":true,"message":"Реєстрація успішна"}
+[23.04.2026, 14:39:17] REQUEST from 127.0.0.1:60882 -> {"action":"login","data":{"login":"lab 2","password":"123"}}
+[23.04.2026, 14:39:17] RESPONSE -> {"success":true,"message":"Авторизація успішна"}
+[23.04.2026, 14:41:49] REQUEST from 127.0.0.1:60882 -> {"action":"getAllProducts","data":{}}
+[23.04.2026, 14:41:49] RESPONSE -> returned 26 products
+[23.04.2026, 14:49:14] REQUEST from 127.0.0.1:60882 -> {"action":"addProduct","data":{"name":"Шоколад","supermarket":"КЛАСС","price":"38.7","category":"Солодощі","address":"м. Харків, вул. Сумська, 78"}}
+[23.04.2026, 14:49:14] RESPONSE -> added product Шоколад
+[23.04.2026, 14:49:36] REQUEST from 127.0.0.1:60882 -> {"action":"searchProduct","data":{"name":"Шоколад"}}
+[23.04.2026, 14:49:36] RESPONSE -> found 1 products for search "Шоколад"
+[04.05.2026, 20:30:57] SERVER STARTED on 127.0.0.1:4000
